@@ -1,0 +1,327 @@
+
+/* ================= GOOGLE FONT ================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap');
+
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:
+    radial-gradient(circle at top left,#ff914d 0%,transparent 30%),
+    radial-gradient(circle at top right,#ff7b00 0%,transparent 25%),
+    linear-gradient(180deg,#ff6a00 0%,#ff5e00 45%,#e84b00 100%);
+    color:#111;
+    overflow-x:hidden;
+}
+
+/* ================= WRAPPER ================= */
+.wrapper{
+    width:100%;
+    max-width:1320px;
+    margin:auto;
+    padding:0 20px 60px;
+}
+
+/* ================= HEADER ================= */
+header{
+    max-width:1320px;
+    margin:auto;
+    padding:24px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+/* LOGO */
+.logo{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:62px;
+    letter-spacing:3px;
+    color:#111;
+    text-shadow:2px 2px 0 rgba(255,255,255,.25);
+}
+
+/* SOCIAL */
+.social-center{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-left:auto;
+    flex-wrap:wrap;
+}
+
+.social-center a{
+    width:54px;
+    height:54px;
+    border-radius:18px;
+    background:rgba(255,255,255,.22);
+    backdrop-filter:blur(10px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition:.25s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.social-center a:hover{
+    transform:translateY(-5px) scale(1.05);
+    background:#111;
+}
+
+.social-center img{
+    width:26px;
+    height:26px;
+    object-fit:contain;
+}
+
+/* ================= HERO ================= */
+.hero{
+    text-align:center;
+    padding:35px 20px 55px;
+}
+
+.hero h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:110px;
+    line-height:.92;
+    letter-spacing:2px;
+    margin:auto;
+    text-shadow:
+    0 6px 0 rgba(255,255,255,.18),
+    0 18px 30px rgba(0,0,0,.15);
+    animation:floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+}
+
+/* ================= NFT ROW ================= */
+.characters{
+    display:grid;
+    grid-template-columns:repeat(9,1fr);
+    border-radius:28px 28px 0 0;
+    overflow:hidden;
+    box-shadow:0 25px 45px rgba(0,0,0,.15);
+}
+
+.character img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    display:block;
+    transition:.35s ease;
+}
+
+.character img:hover{
+    transform:scale(1.08);
+    filter:brightness(1.05);
+}
+
+/* ================= GRID ================= */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(12px);
+    border-radius:0 0 28px 28px;
+    overflow:hidden;
+    box-shadow:0 30px 60px rgba(0,0,0,.14);
+}
+
+/* ================= BOX ================= */
+.box{
+    min-height:460px;
+    padding:55px;
+    border-top:1px solid rgba(0,0,0,.12);
+    border-right:1px solid rgba(0,0,0,.12);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.box:nth-child(2n){
+    border-right:none;
+}
+
+.box:nth-child(odd){
+    align-items:flex-start;
+    text-align:left;
+}
+
+.box:nth-child(even){
+    align-items:center;
+    text-align:center;
+}
+
+/* ================= TEXT ================= */
+.box h2{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:66px;
+    line-height:.92;
+    letter-spacing:1px;
+    margin-bottom:20px;
+    text-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.box p{
+    font-size:19px;
+    line-height:1.9;
+    max-width:470px;
+    margin-bottom:14px;
+    color:#1a1a1a;
+    font-weight:600;
+}
+
+.box span{
+    color:#0047ff;
+    font-weight:900;
+}
+
+/* ================= BUTTON ================= */
+.join-btn{
+    margin-top:20px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 30px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:900;
+    letter-spacing:.8px;
+    transition:.25s ease;
+    box-shadow:0 15px 28px rgba(0,0,0,.18);
+}
+
+.join-btn:hover{
+    transform:translateY(-4px) scale(1.03);
+}
+
+/* ================= FRAME ================= */
+.frame{
+    width:370px;
+    padding:14px;
+    background:rgba(255,255,255,.28);
+    border-radius:24px;
+    box-shadow:0 20px 35px rgba(0,0,0,.14);
+}
+
+.frame img{
+    width:100%;
+    border-radius:18px;
+    display:block;
+}
+
+/* ================= ROADMAP ================= */
+.roadmap-image-box{
+    align-items:center !important;
+    text-align:center !important;
+}
+
+.roadmap-image{
+    width:100%;
+    max-width:560px;
+    border-radius:24px;
+    box-shadow:0 25px 40px rgba(0,0,0,.16);
+    margin-top:10px;
+}
+
+/* ================= WHY ================= */
+.why ul{
+    list-style:none;
+    width:100%;
+}
+
+.why li{
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:12px;
+    max-width:470px;
+    font-weight:600;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:1100px){
+
+    .hero h1{font-size:78px;}
+    .box h2{font-size:52px;}
+    .box{padding:42px;}
+}
+
+@media(max-width:820px){
+
+    header{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .logo{
+        font-size:48px;
+    }
+
+    .hero h1{
+        font-size:58px;
+    }
+
+    .characters{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .character img{
+        height:130px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .box{
+        min-height:auto;
+        border-right:none;
+        padding:34px 24px;
+        align-items:flex-start !important;
+        text-align:left !important;
+    }
+
+    .frame,
+    .roadmap-image{
+        max-width:100%;
+    }
+}
+
+@media(max-width:520px){
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .box h2{
+        font-size:42px;
+    }
+
+    .box p,
+    .why li{
+        font-size:16px;
+    }
+
+    .social-center a{
+        width:48px;
+        height:48px;
+    }
+}
